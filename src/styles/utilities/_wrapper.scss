@@ -1,0 +1,8 @@
+.wrapper {
+  padding: var(--vertical-space) var(--gutter);
+  margin: var(--vertical-space) auto var(--vertical-space) auto;
+  max-width: 100ch;
+  > * {
+    max-width: var(--measure);
+  }
+}

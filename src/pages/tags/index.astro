@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const allPosts = await Astro.glob('../posts/*.md');
+const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+const pageTitle = 'All the Tags';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <article class="flow | wrapper">
+    <div class="cluster | tags">
+      {tags.map((tag) => <a href={`/tags/${tag}`}># {tag}</a>)}
+    </div>
+  </article>
+</BaseLayout>

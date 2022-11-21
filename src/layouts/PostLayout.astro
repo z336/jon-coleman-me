@@ -1,0 +1,38 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+const { frontmatter } = Astro.props;
+const title = frontmatter.title;
+const pubDate = frontmatter.pubDate;
+
+function dateFormatter(x) {
+  const rawDate = new Date(x);
+  const date = rawDate.toLocaleDateString('en-us', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+  return date;
+}
+
+const description = frontmatter.description;
+const tags = frontmatter.tags;
+---
+
+<BaseLayout pageTitle={title} pubDate={dateFormatter(pubDate)}>
+  <article class="flow | wrapper">
+    <p class="post-description">
+      {description}
+    </p>
+    <slot />
+    <div class="cluster | tags">
+      {
+        tags.map((tag) => (
+          <p>
+            <a href={`/tags/${tag}`}># {tag}</a>
+          </p>
+        ))
+      }
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const allPosts = await Astro.glob('../pages/posts/*.md');
+const pageTitle = 'Writing';
+
+function dateFormatter(x) {
+  const rawDate = new Date(x);
+  const date = rawDate.toLocaleDateString('en-us', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+  return date;
+}
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <article class="wrapper | post-list">
+    <ul class="flow">
+      {
+        allPosts.map((post) => (
+          <li>
+            <a href={post.url}>{post.frontmatter.title}</a>
+            <p>{dateFormatter(post.frontmatter.pubDate)}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </article>
+</BaseLayout>

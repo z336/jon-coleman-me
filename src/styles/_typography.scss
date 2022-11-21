@@ -1,0 +1,48 @@
+@font-face {
+  font-family: AlteHaasGroteskRegular;
+  src: url('/fonts/AlteHaasGroteskRegular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: AlteHaasGroteskBold;
+  src: url('/fonts/AlteHaasGroteskBold.ttf');
+  font-style: bold;
+  font-weight: 900;
+  font-display: block;
+}
+
+strong {
+  color: var(--gold);
+  font-family: AlteHaasGroteskBold, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+em {
+  color: var(--cyan);
+}
+
+h1 {
+  font-size: var(--step-3);
+}
+
+h2 {
+  font-size: var(--step-2);
+}
+
+h3 {
+  font-size: var(--step-1);
+}
+
+h4 {
+  font-size: var(--step-0);
+}
+
+h5 {
+  font-size: var(--step--1);
+}
+
+h6 {
+  font-size: var(--step--2);
+}

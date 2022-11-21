@@ -1,0 +1,14 @@
+.footer {
+  padding-top: var(--vertical-space);
+  padding-bottom: var(--vertical-space);
+
+  a {
+    color: var(--white);
+    //   text-decoration: none;
+    @media (hover: hover) {
+      &:hover {
+        text-decoration: underline 0.2rem;
+      }
+    }
+  }
+}

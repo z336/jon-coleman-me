@@ -1,9 +1,10 @@
 ---
-const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname;
+// const pathname = new URL(Astro.request.url).pathname;
+// const pathname = Astro.url;
+// const currentPath = pathname;
 ---
 
-<ul>
+<!-- <ul>
   <li><a class={currentPath === '/' ? 'active' : ''} href="/">Home</a></li>
   <li>
     <a class={currentPath === '/writing' ? 'active' : ''} href="/writing"
@@ -18,4 +19,37 @@ const currentPath = pathname;
   <li>
     <a class={currentPath === '/links' ? 'active' : ''} href="/links">Links</a>
   </li>
+</ul> -->
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li>
+    <a href="/writing">Writing</a>
+  </li>
+  <li>
+    <a href="/projects">Projects</a>
+  </li>
+  <li>
+    <a href="/links">Links</a>
+  </li>
 </ul>
+
+<script>
+  // const navLinks = document.querySelectorAll('nav a');
+
+  // navLinks.forEach((link) => {
+  //   link.classList.remove('active');
+
+  //   // `slice` here to remove the first `/` in pathname
+  //   const currentPath = window.location.pathname.slice('1');
+
+  //   // `link.href` returns a whole url, such as: "https://somedomain.com/posts" and we only need the last part
+  //   const hrefArray = link.href.split('/');
+  //   const thisPath = hrefArray[hrefArray.length - 1];
+
+  //   if (currentPath === thisPath) {
+  //     link.classList.add('active');
+  //   }
+  // });
+
+  import '../scripts/activeNavLink';
+</script>

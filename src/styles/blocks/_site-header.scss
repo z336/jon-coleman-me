@@ -14,22 +14,22 @@
         text-decoration: none;
         @media (hover: hover) {
           &:hover {
-            // text-decoration: underline 0.2rem;
-            background: var(--white);
-            color: var(--black);
-            padding: 0.15em;
-            margin: -0.15em;
+            text-decoration: underline 0.2rem;
+            // background: var(--white);
+            // color: var(--black);
+            // padding: 0.15em;
+            // margin: -0.15em;
           }
         }
       }
     }
     .active {
-      // text-decoration: underline 0.2rem;
-      // text-underline-offset: 0.45rem;
-      background: var(--white);
-      color: var(--black);
-      padding: 0.15em;
-      margin: -0.15em;
+      text-decoration: underline 0.2rem;
+      text-underline-offset: 0.45rem;
+      // background: var(--white);
+      // color: var(--black);
+      // padding: 0.15em;
+      // margin: -0.15em;
     }
   }
 }

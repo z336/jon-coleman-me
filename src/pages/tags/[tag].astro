@@ -26,7 +26,7 @@ const { posts } = Astro.props;
 <BaseLayout pageTitle={tag}>
   <article class="flow | wrapper">
     <p>Posts tagged with "{tag}"</p>
-    <div class="cluster | tags">
+    <div class="cluster">
       {posts.map((post) => <a href={post.url}># {post.frontmatter.title}</a>)}
     </div>
     <p>Check out <em>all</em> of the <a href="/tags">tags</a>.</p>

@@ -1,6 +1,8 @@
 .page-header {
   color: var(--black);
   background-color: var(--white);
+  border-left: solid 0.2rem;
+  border-right: solid 0.2rem;
   h1 {
     font-size: var(--step-5);
   }

@@ -4,7 +4,7 @@
 @use './cube';
 
 html {
-  background: var(--springgreen);
+  background: var(--white);
 }
 
 body {
@@ -22,9 +22,17 @@ main {
 }
 
 footer {
+  color: var(--black);
+  background-color: var(--white);
+  padding-bottom: var(--vertical-space);
   margin-top: var(--vertical-space);
   margin-bottom: 5rem;
-  border-top: solid 0.2rem;
+  border-left: solid 0.2rem;
+  border-right: solid 0.2rem;
+  border-bottom: solid 0.2rem;
+  a {
+    color: var(--black);
+  }
 }
 
 a {
@@ -61,7 +69,7 @@ pre code {
 }
 
 :focus {
-  outline: dashed var(--white);
+  outline: dashed;
   text-decoration: none;
 }
 

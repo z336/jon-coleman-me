@@ -21,9 +21,11 @@ const tags = frontmatter.tags;
 
 <BaseLayout pageTitle={title} pubDate={dateFormatter(pubDate)}>
   <article class="flow | wrapper">
-    <p class="post-description">
-      {description}
-    </p>
+    <section aria-label="article summary">
+      <p class="post-description">
+        {description}
+      </p>
+    </section>
     <slot />
     <div class="cluster">
       {

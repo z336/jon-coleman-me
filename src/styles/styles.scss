@@ -69,11 +69,18 @@ pre code {
 }
 
 :focus {
-  outline: dashed;
+  outline: solid;
   text-decoration: none;
 }
 
 ::selection {
   background-color: var(--gold);
   color: var(--black);
+}
+
+.links {
+  div {
+    outline: solid 0.2rem;
+    padding: var(--vertical-space) var(--gutter);
+  }
 }

@@ -15,8 +15,8 @@ function dateFormatter(x) {
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <article class="wrapper | post-list">
-    <ul class="flow">
+  <article class="wrapper">
+    <ul class="flow | page-list" role="list">
       {
         allPosts.map((post) => (
           <li>

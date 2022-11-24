@@ -30,6 +30,9 @@ footer {
   border-left: solid 0.2rem;
   border-right: solid 0.2rem;
   border-bottom: solid 0.2rem;
+  ul {
+    word-break: break-all;
+  }
   a {
     color: var(--black);
   }
@@ -54,6 +57,14 @@ code {
   line-height: 1.8;
 }
 
+ul,
+ol {
+  padding: 1.25rem;
+  > * + * {
+    margin-top: 0.75rem;
+  }
+}
+
 blockquote {
   color: var(--cyan);
   font-style: italic;
@@ -76,11 +87,4 @@ pre code {
 ::selection {
   background-color: var(--gold);
   color: var(--black);
-}
-
-.links {
-  div {
-    outline: solid 0.2rem;
-    padding: var(--vertical-space) var(--gutter);
-  }
 }

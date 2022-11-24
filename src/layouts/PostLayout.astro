@@ -20,21 +20,33 @@ const tags = frontmatter.tags;
 ---
 
 <BaseLayout pageTitle={title} pubDate={dateFormatter(pubDate)}>
-  <article class="flow | wrapper">
-    <section aria-label="article summary">
-      <p class="post-description">
-        {description}
-      </p>
-    </section>
-    <slot />
-    <div class="cluster">
-      {
-        tags.map((tag) => (
-          <p>
-            <a href={`/tags/${tag}`}># {tag}</a>
-          </p>
-        ))
-      }
+  <article class="wrapper | sidebar">
+    <div class="flow">
+      <section aria-label="article summary">
+        <p class="post-description">
+          {description}
+        </p>
+      </section>
+      <slot />
     </div>
+    <aside class="flow | tags">
+      <div>
+        <h3>Table of Contents</h3>
+        <ol>
+          <li>one</li>
+          <li>two</li>
+          <li>three</li>
+        </ol>
+      </div>
+      <ul role="list">
+        {
+          tags.map((tag) => (
+            <li>
+              <a href={`/tags/${tag}`}>{tag}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </aside>
   </article>
 </BaseLayout>

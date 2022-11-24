@@ -8,8 +8,16 @@ const pageTitle = 'All the Tags';
 
 <BaseLayout pageTitle={pageTitle}>
   <article class="flow | wrapper">
-    <div class="cluster">
-      {tags.map((tag) => <a href={`/tags/${tag}`}># {tag}</a>)}
+    <div class="tags">
+      <ul role="list">
+        {
+          tags.map((tag) => (
+            <li>
+              <a href={`/tags/${tag}`}>{tag}</a>
+            </li>
+          ))
+        }
+      </ul>
     </div>
   </article>
 </BaseLayout>

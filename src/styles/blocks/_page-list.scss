@@ -1,0 +1,8 @@
+.page-list {
+  list-style-type: none;
+  padding-left: 3rem;
+  border-left: solid 0.2rem;
+  li > a {
+    font-size: var(--step-2);
+  }
+}

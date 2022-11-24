@@ -20,6 +20,8 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
 
+> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum quod deserunt impedit possimus reprehenderit, eius earum ex, nemo non eligendi animi illo facere amet, veniam aut hic ipsam consectetur?
+
 ## What's next
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.

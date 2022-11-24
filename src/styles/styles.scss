@@ -3,7 +3,13 @@
 @use './typography';
 @use './cube';
 
+html {
+  background: var(--springgreen);
+}
+
 body {
+  margin-left: var(--gutter);
+  margin-right: var(--gutter);
   color: var(--white);
   background-color: var(--black);
   font-size: var(--step-0);
@@ -12,21 +18,22 @@ body {
 }
 
 main {
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 footer {
+  margin-top: var(--vertical-space);
   margin-bottom: 5rem;
   border-top: solid 0.2rem;
-  border-bottom: solid 0.2rem;
 }
 
 a {
   color: var(--white);
   text-decoration: underline 0.2rem;
+  text-underline-offset: 0.45rem;
   @media (hover: hover) {
     &:hover {
-      text-underline-offset: 0.45rem;
+      text-underline-offset: 0.65rem;
     }
   }
 }

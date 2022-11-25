@@ -1,5 +1,5 @@
-function dateFormatter(x) {
-  const rawDate = new Date(x);
+function dateFormatter(pubDate) {
+  const rawDate = new Date(pubDate);
   const date = rawDate.toLocaleDateString('en-us', {
     year: 'numeric',
     month: 'short',
@@ -7,5 +7,3 @@ function dateFormatter(x) {
   });
   return date;
 }
-
-export default date;

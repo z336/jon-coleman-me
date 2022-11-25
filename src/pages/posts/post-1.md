@@ -10,9 +10,11 @@ image:
 tags: ['astro', 'blogging', 'learning in public']
 ---
 
+# Table of contents
+
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
-## What I've accomplished
+## One Two
 
 1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
 
@@ -22,6 +24,6 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 > Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum quod deserunt impedit possimus reprehenderit, eius earum ex, nemo non eligendi animi illo facere amet, veniam aut hic ipsam consectetur?
 
-## What's next
+## Next
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.

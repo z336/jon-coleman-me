@@ -1,12 +1,14 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 
-const { frontmatter } = Astro.props;
+const { frontmatter, headings } = Astro.props;
 const title = frontmatter.title;
 const pubDate = frontmatter.pubDate;
+const description = frontmatter.description;
+const tags = frontmatter.tags;
 
-function dateFormatter(x) {
-  const rawDate = new Date(x);
+function dateFormatter(pubDate) {
+  const rawDate = new Date(pubDate);
   const date = rawDate.toLocaleDateString('en-us', {
     year: 'numeric',
     month: 'short',
@@ -15,8 +17,13 @@ function dateFormatter(x) {
   return date;
 }
 
-const description = frontmatter.description;
-const tags = frontmatter.tags;
+// Look for any h2 level headings in the document
+const getHeadings = headings.filter((heading) => {
+  return heading.depth === 2;
+});
+
+// Don't display table of contents if there are no h2 level headings
+const visible = getHeadings.length === 0 ? false : true;
 ---
 
 <BaseLayout pageTitle={title} pubDate={dateFormatter(pubDate)}>
@@ -30,23 +37,36 @@ const tags = frontmatter.tags;
       <slot />
     </div>
     <aside class="flow | tags">
+      {
+        visible ? (
+          <div>
+            <h3>Table of Contents</h3>
+            <ol role="list">
+              {getHeadings.map((heading) => {
+                return (
+                  <li>
+                    <a href={`#${heading.slug}`}>{heading.text}</a>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+        ) : (
+          ''
+        )
+      }
       <div>
-        <h3>Table of Contents</h3>
-        <ol>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-        </ol>
+        <h3>Related</h3>
+        <ul role="list">
+          {
+            tags.map((tag) => (
+              <li>
+                <a href={`/tags/${tag}`}>{tag}</a>
+              </li>
+            ))
+          }
+        </ul>
       </div>
-      <ul role="list">
-        {
-          tags.map((tag) => (
-            <li>
-              <a href={`/tags/${tag}`}>{tag}</a>
-            </li>
-          ))
-        }
-      </ul>
     </aside>
   </article>
 </BaseLayout>

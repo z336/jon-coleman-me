@@ -7,17 +7,15 @@ const pageTitle = 'All the Tags';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <article class="flow | wrapper">
-    <div class="tags">
-      <ul role="list">
-        {
-          tags.map((tag) => (
-            <li>
-              <a href={`/tags/${tag}`}>{tag}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
+  <article class="flow | wrapper | post-content">
+    <ul class="cluster | tags" role="list">
+      {
+        tags.map((tag) => (
+          <li>
+            <a href={`/tags/${tag}`}>{tag}</a>
+          </li>
+        ))
+      }
+    </ul>
   </article>
 </BaseLayout>

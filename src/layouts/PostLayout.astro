@@ -29,7 +29,7 @@ const getHeadings = headings.filter((heading) => {
 const getTableOfContents = getHeadings.length === 0 ? false : true;
 ---
 
-<BaseLayout pageTitle={title} pubDate={dateFormatter(pubDate)}>
+<BaseLayout pageTitle={title} pubDate={dateFormatter(pubDate)} tags={tags}>
   <article class="wrapper">
     {
       getDescription ? (
@@ -64,8 +64,8 @@ const getTableOfContents = getHeadings.length === 0 ? false : true;
       <slot />
     </div>
     <div class="flow | box | related">
-      <span>Related</span>
-      <ul role="list">
+      <span>Related:</span>
+      <ul class="cluster | tags" role="list">
         {
           tags.map((tag) => (
             <li>

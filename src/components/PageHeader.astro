@@ -1,10 +1,12 @@
 ---
 const { pageTitle, pubDate } = Astro.props;
+
+const getPubDate = pubDate != undefined || null ? true : false;
 ---
 
 <header class="page-header">
   <div class="wrapper">
     <h1>{pageTitle}</h1>
-    <p>{pubDate}</p>
+    {getPubDate ? <p>{pubDate}</p> : ''}
   </div>
 </header>

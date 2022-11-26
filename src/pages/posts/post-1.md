@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: 'My First Blog Post'
 pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog. Lets make it a little longer. OK just a bit longer now.'
+description: 'This is the first post of my new Astro blog. Lets make it a little longer. OK just a bit longer now. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!'
 author: 'Astro Learner'
 image:
   url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg'

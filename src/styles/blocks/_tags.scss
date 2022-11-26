@@ -1,9 +1,9 @@
-// .tags {
-//   ul {
-//     list-style-type: none;
-//     // padding-left: 0.1rem;
-//   }
-//   ul li::before {
-//     content: '# ';
-//   }
-// }
+.tags {
+  li {
+    list-style: none;
+    margin: 0;
+  }
+  li::before {
+    content: '# ';
+  }
+}

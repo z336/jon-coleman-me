@@ -18,21 +18,21 @@ function dateFormatter(pubDate) {
 }
 
 // Look for description in the frontmatter of the document
-const getDescription = description === undefined || null ? false : true;
+const showDescription = description === undefined || null ? false : true;
 
-// Look for any h2 level headings in the document
+// Filter out heading objects if they are not heading level 2
 const getHeadings = headings.filter((heading) => {
   return heading.depth === 2;
 });
 
 // Don't display table of contents if there are no h2 level headings
-const getTableOfContents = getHeadings.length === 0 ? false : true;
+const showTableOfContents = getHeadings.length === 0 ? false : true;
 ---
 
 <BaseLayout pageTitle={title} pubDate={dateFormatter(pubDate)} tags={tags}>
   <article class="wrapper">
     {
-      getDescription ? (
+      showDescription ? (
         <section class="description" aria-label="article summary">
           <p>{description}</p>
         </section>
@@ -41,7 +41,7 @@ const getTableOfContents = getHeadings.length === 0 ? false : true;
       )
     }
     {
-      getTableOfContents ? (
+      showTableOfContents ? (
         <nav class="box | table-of-contents">
           <div class="flow">
             <span>Table of Contents</span>

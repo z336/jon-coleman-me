@@ -16,7 +16,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem provident d
 
 > Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum quod deserunt impedit possimus reprehenderit, eius earum ex, nemo non eligendi animi illo facere amet, veniam aut hic ipsam consectetur?
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!
+`Lorem ipsum dolor sit amet consectetur adipisicing elit`. Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!
 
 Here is a [link](https://www.google.com) in a sentence.
 

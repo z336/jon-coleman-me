@@ -1,11 +1,6 @@
 .page-header {
   color: var(--black);
   background-color: var(--white);
-  opacity: 1;
-  background-image: radial-gradient(#dadadb 0.4px, transparent 0.4px),
-    radial-gradient(#dadadb 0.4px, #ffffff 0.4px);
-  background-size: 16px 16px;
-  background-position: 0 0, 8px 8px;
   border-left: solid 0.25rem;
   border-right: solid 0.25rem;
   h1 {

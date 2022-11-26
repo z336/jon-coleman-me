@@ -1,7 +1,6 @@
 .box {
   padding: 2rem;
-  border-top: solid 0.2rem var(--gray);
-  border-bottom: dotted 0.1rem var(--gray);
+  border: solid 0.2rem;
   span {
     font-size: var(--step-1);
   }

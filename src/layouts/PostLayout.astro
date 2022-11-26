@@ -30,7 +30,7 @@ const getTableOfContents = getHeadings.length === 0 ? false : true;
 ---
 
 <BaseLayout pageTitle={title} pubDate={dateFormatter(pubDate)}>
-  <article class="wrapper | flow">
+  <article class="wrapper">
     {
       getDescription ? (
         <section aria-label="article summary">
@@ -42,25 +42,28 @@ const getTableOfContents = getHeadings.length === 0 ? false : true;
     }
     {
       getTableOfContents ? (
-        <nav class="box">
-          <span>Table of Contents</span>
-          <ol role="list">
-            {getHeadings.map((heading) => {
-              return (
-                <li>
-                  <a href={`#${heading.slug}`}>{heading.text}</a>
-                </li>
-              );
-            })}
-          </ol>
+        <nav class="box | table-of-contents">
+          <div class="flow">
+            <span>Table of Contents</span>
+            <ol role="list">
+              {getHeadings.map((heading) => {
+                return (
+                  <li>
+                    <a href={`#${heading.slug}`}>{heading.text}</a>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
         </nav>
       ) : (
         ''
       )
     }
-
-    <slot />
-    <div class="box">
+    <div class="flow | post-content">
+      <slot />
+    </div>
+    <div class="flow | box | related">
       <span>Related</span>
       <ul role="list">
         {

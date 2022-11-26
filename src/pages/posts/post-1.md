@@ -10,19 +10,15 @@ image:
 tags: ['astro', 'blogging', 'learning in public']
 ---
 
-# Table of contents
-
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-
-## One Two
-
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
-
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
-
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+## What I have accomplished
 
 > Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum quod deserunt impedit possimus reprehenderit, eius earum ex, nemo non eligendi animi illo facere amet, veniam aut hic ipsam consectetur?
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!
+
+Here is a [link](https://www.google.com) in a sentence.
 
 ## Next
 

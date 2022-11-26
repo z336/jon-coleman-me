@@ -1,0 +1,8 @@
+.box {
+  padding: 2rem;
+  border-top: solid 0.2rem var(--gray);
+  border-bottom: solid 0.2rem var(--gray);
+  span {
+    font-size: var(--step-1);
+  }
+}

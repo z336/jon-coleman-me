@@ -1,6 +1,7 @@
 :root {
   --black: #090a10;
   --white: #ffffff;
+  --gray: #6d6d6d;
   --cyan: #00ffff;
   --gold: #ffd700;
   --springgreen: #00ff7f;
@@ -11,12 +12,21 @@
   --measure: 60ch;
   --gutter: 1rem;
   --vertical-space: 2rem;
-  --step--2: clamp(0.78rem, calc(0.71rem + 0.35vw), 0.96rem);
-  --step--1: clamp(0.94rem, calc(0.84rem + 0.51vw), 1.2rem);
-  --step-0: clamp(1.13rem, calc(0.98rem + 0.73vw), 1.5rem);
-  --step-1: clamp(1.35rem, calc(1.15rem + 1.02vw), 1.88rem);
-  --step-2: clamp(1.62rem, calc(1.34rem + 1.41vw), 2.34rem);
-  --step-3: clamp(1.94rem, calc(1.56rem + 1.92vw), 2.93rem);
-  --step-4: clamp(2.33rem, calc(1.81rem + 2.59vw), 3.66rem);
-  --step-5: clamp(2.8rem, calc(2.11rem + 3.47vw), 4.58rem);
+  // --step--2: clamp(0.78rem, calc(0.71rem + 0.35vw), 0.96rem);
+  // --step--1: clamp(0.94rem, calc(0.84rem + 0.51vw), 1.2rem);
+  // --step-0: clamp(1.13rem, calc(0.98rem + 0.73vw), 1.5rem);
+  // --step-1: clamp(1.35rem, calc(1.15rem + 1.02vw), 1.88rem);
+  // --step-2: clamp(1.62rem, calc(1.34rem + 1.41vw), 2.34rem);
+  // --step-3: clamp(1.94rem, calc(1.56rem + 1.92vw), 2.93rem);
+  // --step-4: clamp(2.33rem, calc(1.81rem + 2.59vw), 3.66rem);
+  // --step-5: clamp(2.8rem, calc(2.11rem + 3.47vw), 4.58rem);
+
+  --step--2: clamp(0.69rem, calc(0.62rem + 0.38vw), 0.96rem);
+  --step--1: clamp(0.83rem, calc(0.73rem + 0.52vw), 1.2rem);
+  --step-0: clamp(1rem, calc(0.86rem + 0.71vw), 1.5rem);
+  --step-1: clamp(1.2rem, calc(1.01rem + 0.96vw), 1.88rem);
+  --step-2: clamp(1.44rem, calc(1.18rem + 1.29vw), 2.34rem);
+  --step-3: clamp(1.73rem, calc(1.38rem + 1.72vw), 2.93rem);
+  --step-4: clamp(2.07rem, calc(1.62rem + 2.27vw), 3.66rem);
+  --step-5: clamp(2.49rem, calc(1.89rem + 2.98vw), 4.58rem);
 }

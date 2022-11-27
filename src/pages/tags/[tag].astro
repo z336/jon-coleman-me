@@ -25,21 +25,23 @@ const { posts } = Astro.props;
 ---
 
 <BaseLayout pageTitle={`Posts tagged with "${tag}"`}>
-  <article class="wrapper">
-    <div class="flow">
-      <ul class="flow | page-list" role="list">
-        {
-          posts.map((post) => (
-            <li>
-              <a href={post.url}>{post.frontmatter.title}</a>
-              <p>
-                <PubDate pubDate={post.frontmatter.pubDate} />
-              </p>
-            </li>
-          ))
-        }
-      </ul>
-      <p><a href="/tags">View all tags</a></p>
-    </div>
+  <article class="wrapper | flow">
+    <p>
+      Find other posts related to "{tag}" or <a href="/tags"
+        >view all of the tags</a
+      >.
+    </p>
+    <ul class="flow | page-list" role="list">
+      {
+        posts.map((post) => (
+          <li>
+            <a href={post.url}>{post.frontmatter.title}</a>
+            <p>
+              <PubDate pubDate={post.frontmatter.pubDate} />
+            </p>
+          </li>
+        ))
+      }
+    </ul>
   </article>
 </BaseLayout>

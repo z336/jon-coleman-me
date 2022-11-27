@@ -7,16 +7,6 @@ const pubDate = frontmatter.pubDate;
 const description = frontmatter.description;
 const tags = frontmatter.tags;
 
-function dateFormatter(pubDate) {
-  const rawDate = new Date(pubDate);
-  const date = rawDate.toLocaleDateString('en-us', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  });
-  return date;
-}
-
 // Look for description in the frontmatter of the document
 const showDescription = description === undefined || null ? false : true;
 
@@ -29,7 +19,7 @@ const getHeadings = headings.filter((heading) => {
 const showTableOfContents = getHeadings.length === 0 ? false : true;
 ---
 
-<BaseLayout pageTitle={title} pubDate={dateFormatter(pubDate)} tags={tags}>
+<BaseLayout pageTitle={title} pubDate={pubDate} tags={tags}>
   <article class="wrapper">
     {
       showDescription ? (

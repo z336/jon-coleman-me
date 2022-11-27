@@ -1,4 +1,6 @@
 ---
+import PubDate from './PubDate.astro';
+
 const { pageTitle, pubDate } = Astro.props;
 
 const getPubDate = pubDate != undefined || null ? true : false;
@@ -7,6 +9,14 @@ const getPubDate = pubDate != undefined || null ? true : false;
 <header class="page-header">
   <div class="wrapper">
     <h1>{pageTitle}</h1>
-    {getPubDate ? <p>{pubDate}</p> : ''}
+    {
+      getPubDate ? (
+        <p>
+          <PubDate pubDate={pubDate} />
+        </p>
+      ) : (
+        ''
+      )
+    }
   </div>
 </header>

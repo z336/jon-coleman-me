@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PubDate from '../../components/PubDate.astro';
 
 export async function getStaticPaths({}) {
   const allPosts = await Astro.glob('../posts/*.md');
@@ -21,16 +22,6 @@ export async function getStaticPaths({}) {
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
-
-function dateFormatter(pubDate) {
-  const rawDate = new Date(pubDate);
-  const date = rawDate.toLocaleDateString('en-us', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  });
-  return date;
-}
 ---
 
 <BaseLayout pageTitle={`Posts tagged with "${tag}"`}>
@@ -41,7 +32,9 @@ function dateFormatter(pubDate) {
           posts.map((post) => (
             <li>
               <a href={post.url}>{post.frontmatter.title}</a>
-              <p>{dateFormatter(post.frontmatter.pubDate)}</p>
+              <p>
+                <PubDate pubDate={post.frontmatter.pubDate} />
+              </p>
             </li>
           ))
         }

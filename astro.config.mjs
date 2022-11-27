@@ -9,7 +9,7 @@ export default defineConfig({
     rehypePlugins: [
       'rehype-slug',
       ['rehype-autolink-headings', { behavior: 'prepend' }],
-      [addClasses, { 'h1,h2,h3': 'permalink' }],
+      [addClasses, { 'h1,h2,h3': 'heading-anchor' }],
     ],
     extendDefaultPlugins: true,
   },

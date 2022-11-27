@@ -10,11 +10,11 @@
   }
 }
 
-.permalink {
+.heading-anchor {
   position: relative;
 }
 
-.permalink a {
+.heading-anchor a {
   position: absolute;
   display: block;
   height: 100%;
@@ -22,16 +22,16 @@
   color: inherit;
 }
 
-.permalink a:before {
+.heading-anchor a:before {
   position: absolute;
   right: 100%;
   display: block;
   content: '#';
   margin-right: 0.2em;
-  // visibility: hidden;
+  visibility: hidden;
   opacity: 1;
 }
 
-// .permalink:hover a:before {
-//   visibility: visible;
-// }
+.heading-anchor:hover a:before {
+  visibility: visible;
+}

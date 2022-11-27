@@ -3,4 +3,35 @@
   ol {
     padding-left: 2rem;
   }
+  h2,
+  h3,
+  h4 {
+    display: inline-block;
+  }
 }
+
+.permalink {
+  position: relative;
+}
+
+.permalink a {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: inherit;
+}
+
+.permalink a:before {
+  position: absolute;
+  right: 100%;
+  display: block;
+  content: '#';
+  margin-right: 0.2em;
+  // visibility: hidden;
+  opacity: 1;
+}
+
+// .permalink:hover a:before {
+//   visibility: visible;
+// }

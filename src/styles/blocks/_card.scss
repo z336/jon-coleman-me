@@ -1,0 +1,21 @@
+.card {
+  margin-bottom: 5rem;
+  border-left: solid 0.2rem;
+  border-right: solid 0.2rem;
+  border-top: solid 0.2rem;
+  border-bottom: 0;
+  max-width: var(--measure);
+  > * {
+    border-bottom: solid 0.2rem;
+  }
+  h2 {
+    padding: 2rem;
+    margin: 0;
+  }
+  p {
+    padding: 2rem;
+  }
+  ul {
+    padding: 4rem;
+  }
+}

@@ -1,6 +1,7 @@
 .box {
   padding: 2rem;
   border: solid 0.2rem;
+  max-width: var(--measure);
   span {
     font-size: var(--step-1);
   }

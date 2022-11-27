@@ -14,9 +14,9 @@ tags: ['astro', 'blogging', 'learning in public']
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!
 
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum quod deserunt impedit possimus reprehenderit, eius earum ex, nemo non eligendi animi illo facere amet, veniam aut hic ipsam consectetur?
+> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum quod deserunt impedit possimus reprehenderit, eius earum ex, nemo non eligendi animi illo facere amet, veniam aut hic ipsam? — [Benjamin Franklin](https://google.com)
 
-`Lorem ipsum dolor sit amet consectetur adipisicing elit`. Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!
+Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!
 
 Here is a [link](https://www.google.com) in a sentence.
 
@@ -27,8 +27,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem _provident 
 ### This heading is level three
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!
-
-#### This one is a level four
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!
 
@@ -42,3 +40,7 @@ I will finish the Astro tutorial, and then keep adding more posts. Watch this sp
 - It contains a few items
 - Because it's not realistic
 - To list single items
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem provident dolorum eos iusto itaque possimus quis consectetur ratione aliquid mollitia iste voluptate deleniti ullam aspernatur explicabo eius, consequuntur nemo!

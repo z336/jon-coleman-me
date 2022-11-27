@@ -64,11 +64,12 @@ ol {
 }
 
 blockquote {
+  font-family: serif;
   font-style: italic;
   font-size: var(--step-1);
-  max-width: 100ch;
   padding-left: 2rem;
-  border-left: solid 0.2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 pre code {

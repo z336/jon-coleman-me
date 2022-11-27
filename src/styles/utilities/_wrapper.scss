@@ -2,7 +2,7 @@
   padding: var(--vertical-space) var(--gutter);
   margin: var(--vertical-space) auto var(--vertical-space) auto;
   max-width: 90ch;
-  > * {
+  > * :not(blockquote) {
     max-width: var(--measure);
   }
 }

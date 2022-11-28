@@ -1,20 +1,24 @@
 .site-header {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  div {
-    margin-top: 0.5rem;
-    align-self: center;
-  }
 
-  svg {
-    place-self: center;
+  div {
+    padding-top: 0.5rem;
+    align-self: center;
+    max-width: 275px;
   }
 
   a {
     display: inline-block;
   }
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   nav {
+    align-self: center;
     ul {
       padding: 0;
       margin: 0;

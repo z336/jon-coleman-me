@@ -8,7 +8,7 @@ export default defineConfig({
   markdown: {
     rehypePlugins: [
       'rehype-slug',
-      ['rehype-autolink-headings', { behavior: 'prepend' }],
+      ['rehype-autolink-headings', { behavior: 'wrap' }],
       [addClasses, { 'h1,h2,h3': 'heading-anchor' }],
     ],
     extendDefaultPlugins: true,

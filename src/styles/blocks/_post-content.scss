@@ -10,28 +10,17 @@
   }
 }
 
-.heading-anchor {
-  position: relative;
-}
-
 .heading-anchor a {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  color: inherit;
-}
-
-.heading-anchor a:before {
-  position: absolute;
-  right: 100%;
-  display: block;
-  content: '#';
-  margin-right: 0.2em;
-  visibility: hidden;
-  opacity: 1;
-}
-
-.heading-anchor:hover a:before {
-  visibility: visible;
+  text-decoration: none;
+  &:after {
+    color: var(--gray);
+    content: '#';
+    margin-left: 1ch;
+    text-decoration: underline 0.2rem;
+  }
+  @media (hover: hover) {
+    &:hover:after {
+      color: var(--white);
+    }
+  }
 }

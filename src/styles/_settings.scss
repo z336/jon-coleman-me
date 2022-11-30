@@ -13,30 +13,12 @@
   --gutter: 1rem;
   --vertical-space: 2rem;
 
-  // --step--2: clamp(0.78rem, calc(0.71rem + 0.35vw), 0.96rem);
-  // --step--1: clamp(0.94rem, calc(0.84rem + 0.51vw), 1.2rem);
-  // --step-0: clamp(1.13rem, calc(0.98rem + 0.73vw), 1.5rem);
-  // --step-1: clamp(1.35rem, calc(1.15rem + 1.02vw), 1.88rem);
-  // --step-2: clamp(1.62rem, calc(1.34rem + 1.41vw), 2.34rem);
-  // --step-3: clamp(1.94rem, calc(1.56rem + 1.92vw), 2.93rem);
-  // --step-4: clamp(2.33rem, calc(1.81rem + 2.59vw), 3.66rem);
-  // --step-5: clamp(2.8rem, calc(2.11rem + 3.47vw), 4.58rem);
-
-  // --step--2: clamp(0.69rem, calc(0.62rem + 0.38vw), 0.96rem);
-  // --step--1: clamp(0.83rem, calc(0.73rem + 0.52vw), 1.2rem);
-  // --step-0: clamp(1rem, calc(0.86rem + 0.71vw), 1.5rem);
-  // --step-1: clamp(1.2rem, calc(1.01rem + 0.96vw), 1.88rem);
-  // --step-2: clamp(1.44rem, calc(1.18rem + 1.29vw), 2.34rem);
-  // --step-3: clamp(1.73rem, calc(1.38rem + 1.72vw), 2.93rem);
-  // --step-4: clamp(2.07rem, calc(1.62rem + 2.27vw), 3.66rem);
-  // --step-5: clamp(2.49rem, calc(1.89rem + 2.98vw), 4.58rem);
-
-  --step--2: clamp(0.69rem, calc(0.64rem + 0.27vw), 0.88rem);
-  --step--1: clamp(0.83rem, calc(0.76rem + 0.38vw), 1.1rem);
-  --step-0: clamp(1rem, calc(0.89rem + 0.54vw), 1.38rem);
-  --step-1: clamp(1.2rem, calc(1.05rem + 0.74vw), 1.72rem);
-  --step-2: clamp(1.44rem, calc(1.24rem + 1.01vw), 2.15rem);
-  --step-3: clamp(1.73rem, calc(1.45rem + 1.37vw), 2.69rem);
-  --step-4: clamp(2.07rem, calc(1.71rem + 1.83vw), 3.36rem);
-  --step-5: clamp(2.49rem, calc(2rem + 2.44vw), 4.2rem);
+  --step--2: clamp(0.69rem, calc(0.65rem + 0.25vw), 0.96rem);
+  --step--1: clamp(0.83rem, calc(0.77rem + 0.34vw), 1.2rem);
+  --step-0: clamp(1rem, calc(0.91rem + 0.46vw), 1.5rem);
+  --step-1: clamp(1.2rem, calc(1.08rem + 0.63vw), 1.88rem);
+  --step-2: clamp(1.44rem, calc(1.27rem + 0.84vw), 2.34rem);
+  --step-3: clamp(1.73rem, calc(1.51rem + 1.11vw), 2.93rem);
+  --step-4: clamp(2.07rem, calc(1.78rem + 1.47vw), 3.66rem);
+  --step-5: clamp(2.49rem, calc(2.1rem + 1.93vw), 4.58rem);
 }

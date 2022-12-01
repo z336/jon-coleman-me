@@ -1,0 +1,38 @@
+---
+import PubDate from './PubDate.astro';
+
+// Get all of the posts, sort them by descending pub date, slice them after the third post
+const allPosts = await Astro.glob('../pages/posts/*.md');
+const allPostsSorted = allPosts.sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+);
+const allPostsSortedAndSliced = allPostsSorted.slice(0, 3);
+
+// Get the current path, show 3 posts if it is the home page, all posts if it is /writing
+const pathname = new URL(Astro.request.url).pathname;
+const slicePosts = pathname === '/' ? true : false;
+---
+
+<ul class="flow | page-list" role="list">
+  {
+    slicePosts
+      ? allPostsSortedAndSliced.map((post) => (
+          <li>
+            <a href={post.url}>{post.frontmatter.title}</a>
+            <p>
+              <PubDate pubDate={post.frontmatter.pubDate} />
+            </p>
+          </li>
+        ))
+      : allPostsSorted.map((post) => (
+          <li>
+            <a href={post.url}>{post.frontmatter.title}</a>
+            <p>
+              <PubDate pubDate={post.frontmatter.pubDate} />
+            </p>
+          </li>
+        ))
+  }
+</ul>

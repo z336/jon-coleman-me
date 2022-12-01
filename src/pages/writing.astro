@@ -1,19 +1,23 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PubDate from '../components/PubDate.astro';
+import Posts from '../components/Posts.astro';
+// import PubDate from '../components/PubDate.astro';
 
-const allPosts = await Astro.glob('../pages/posts/*.md');
-const allPostsSorted = allPosts.sort(
-  (a, b) =>
-    new Date(b.frontmatter.pubDate).valueOf() -
-    new Date(a.frontmatter.pubDate).valueOf()
-);
+// const allPosts = await Astro.glob('../pages/posts/*.md');
+// const allPostsSorted = allPosts.sort(
+//   (a, b) =>
+//     new Date(b.frontmatter.pubDate).valueOf() -
+//     new Date(a.frontmatter.pubDate).valueOf()
+// );
+// const allPostsSortedAndSliced = allPostsSorted.slice(0, 3);
+
 const pageTitle = 'Writing';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <article class="wrapper">
-    <ul class="flow | page-list" role="list">
+    <Posts />
+    <!-- <ul class="flow | page-list" role="list">
       {
         allPostsSorted.map((post) => (
           <li>
@@ -24,6 +28,6 @@ const pageTitle = 'Writing';
           </li>
         ))
       }
-    </ul>
+    </ul> -->
   </article>
 </BaseLayout>

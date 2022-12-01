@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Posts from '../components/Posts.astro';
 
 const pageTitle = `Hi, I'm Jon`;
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <article class="wrapper">
+  <article class="wrapper | flow">
     <div class="flow">
       <p>
         I'm interested in writing for the web as a ux writer & technical writer,
@@ -19,5 +20,7 @@ const pageTitle = `Hi, I'm Jon`;
         > if you'd like to track it.
       </p>
     </div>
+    <h2>Latest posts</h2>
+    <Posts />
   </article>
 </BaseLayout>

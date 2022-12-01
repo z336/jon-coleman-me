@@ -20,7 +20,7 @@ const { pageTitle, pubDate, tags } = Astro.props;
   </head>
   <body>
     <SiteHeader />
-    <main>
+    <main id="main">
       <PageHeader pageTitle={pageTitle} pubDate={pubDate} tags={tags} />
       <slot />
     </main>

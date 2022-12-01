@@ -1,7 +1,6 @@
 .site-header {
   padding-top: 1rem;
   padding-bottom: 1rem;
-
   div {
     padding-top: 0.5rem;
     align-self: center;
@@ -33,5 +32,17 @@
     //   text-decoration: underline 0.2rem;
     //   text-underline-offset: 0.65rem;
     // }
+  }
+}
+
+.skip-to-main {
+  position: absolute;
+  background-color: var(--black);
+  transform: translateY(-500%);
+  transition: transform 325ms ease-in;
+  left: 2rem;
+  &:focus {
+    transform: translateY(0);
+    top: 2rem;
   }
 }

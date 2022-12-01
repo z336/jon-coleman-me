@@ -4,6 +4,7 @@ import addClasses from './add-classes.mjs';
 
 // https://astro.build/config
 export default defineConfig({
+  build: { format: 'file' },
   integrations: [image()],
   markdown: {
     rehypePlugins: [
